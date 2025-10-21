@@ -6,7 +6,8 @@ const config= require("config");
 const { sign } = require("../common/jwt");
 
 passport.use(new GoogleStrategy({
-    clientID:config.get("passport.google_client_id"),
+    // clientID:config.get("passport.google_client_id"),
+    clientID:"22sadahv",
     clientSecret:config.get("passport.google_client_secret") ,
     callbackURL: "http://localhost:3000/admin/auth/google/callback"
   },
